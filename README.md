@@ -4,7 +4,7 @@ How to use VRAM like a ramdisk
 ## Grafikkarte als Ramdisk nutzen
 Vramfs: https://github.com/Overv/vramfs
 
-Erforderlichen Pakete:
+Erforderlichen Pakete (Ubuntu 22.04 / Linux Mint 21):
 ```
 sudo apt install build-essential clinfo libfuse3-dev opencl-dev opencl-clhpp-headers git
 ```
