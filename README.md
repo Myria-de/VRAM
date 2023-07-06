@@ -97,7 +97,7 @@ swapon
 ```
 lässt sich kontrollieren, dass eine neue Swap-Partition erstellt wurde. Mit dem Tool zramctl kann man die Konfiguration ebenfalls prüfen und bei Bedarf ändern (siehe man zramctl).
 
-## Universelle Ramdisk als Datenspeicher
+## Universelle Ramdisk (Hauptspeicher) als Datenspeicher
 Eine Ramdisk ist im Handumdrehen erstellt. Idealerweise liegt dieser Speicher zentral, etwa im Home-Verzeichnis oder gleich auf dem Desktop. Erstellen Sie mit
 ```
 mkdir ~/Schreibtisch/Ramdisk
