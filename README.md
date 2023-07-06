@@ -1,5 +1,5 @@
 # VRAM
-How to use VRAM like a ramdisk
+How to use VRAM as ramdisk
 
 ## Grafikkarte als Ramdisk nutzen
 Vramfs: https://github.com/Overv/vramfs
@@ -27,7 +27,7 @@ sudo cp bin/vramfs /usr/local/bin
 
 "/etc/fuse.conf" bearbeiten,  Kommentarzeichen vor „user_allow_other“ entfernen.
 
-Textdatei "90-vramfs.conf"  erstellen:
+Textdatei "90-vramfs.conf" im Ordner "/etc/security" erstellen:
 ```
 [User] hard memlock unlimited
 [User] soft memlock unlimited
