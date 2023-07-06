@@ -1,0 +1,12 @@
+[Unit]
+Description=Set up swap in VRAM
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/root/mkvram.sh
+ExecStartPost=/root/mkswap.sh
+ExecStop=/usr/bin/bash -c "swapoff -a && fusermount -u /tmp/vram"
+
+[Install]
+WantedBy=default.target

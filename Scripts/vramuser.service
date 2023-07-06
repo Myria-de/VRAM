@@ -1,0 +1,16 @@
+[Unit]
+Description=Set up VRAM storage (user)
+Requires=systemd-modules-load.service
+After=network.target systemd-modules-load.service
+
+[Service]
+Type=simple
+User=te
+Group=te
+LimitMEMLOCK=infinity
+LimitRTPRIO=infinity
+ExecStart=/usr/bin/bash -c "exec $HOME/vramuser.sh"
+ExecStop =/usr/bin/bash -c "exec fusermount -u $HOME/VRAM"
+
+[Install]
+WantedBy=multi-user.target
