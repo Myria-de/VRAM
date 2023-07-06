@@ -1,5 +1,5 @@
 # VRAM
-How to use VRAM as ramdisk
+How to use VRAM as ramdisk (LinuxWelt 05/2023).
 
 ## Grafikkarte als Ramdisk nutzen
 Vramfs: https://github.com/Overv/vramfs
